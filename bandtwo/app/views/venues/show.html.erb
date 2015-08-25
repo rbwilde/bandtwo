@@ -1,0 +1,7 @@
+
+<h1><%= @venue.name %></h1>
+<%= @venue.city %>
+<%= @venue.state %>
+<%= @venue.family_friendly %>
+
+<%= link_to 'See Events', venue_events_path(@venue.id) %>

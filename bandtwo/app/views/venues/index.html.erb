@@ -1,1 +1,14 @@
-index.html.erb
+<h1>Listing All Venues</h1>
+
+<ul>
+	<% @venues.each do |venue| %>
+	<li>
+		<%= link_to venue.name, venue_path(venue) %>
+		<%= venue.city %>
+	</li>
+	<% end %>
+</ul>
+
+<%= link_to 'Add New Venue', new_venue_path %>
+
+
