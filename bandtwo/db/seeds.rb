@@ -15,6 +15,6 @@ jones = Venue.create({name: "Jones Beach",city: "New York",state: "NY",family_fr
 msg = Venue.create({name: "MSG",city: "New York",state: "NY",family_friendly: true})
 big = Venue.create({name: "The Big Theater",city: "Atlanta",state: "GA"})
 
-Event.create({date: "8/1/2015",alcohol_served: false,band: kills,venue: jones})
-Event.create({date: "9/15/2015",alcohol_served: false,band: joel,venue: msg})
-Event.create({date: "10/10/2015",band: shins,venue: big})
+Event.create({date: "2015-8-1",alcohol_served: false,band: kills,venue: jones})
+Event.create({date: "2015-9-15",alcohol_served: false,band: joel,venue: msg})
+Event.create({date: "2015-10-10",band: shins,venue: big})

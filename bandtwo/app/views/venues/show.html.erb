@@ -1,7 +1,14 @@
 
 <h1><%= @venue.name %></h1>
-<%= @venue.city %>
-<%= @venue.state %>
-<%= @venue.family_friendly %>
+City:
+<%= @venue.city %><br>
+State:
+<%= @venue.state %><br>
+Family Friendly Venue?
+<%= @venue.family_friendly %><br>
 
-<%= link_to 'See Events', venue_events_path(@venue.id) %>
+<%= link_to 'See Events', venue_events_path(@venue.id) %><br>
+
+<%= link_to 'Go Back to Venues', venues_path %><br>
+
+<%= link_to 'delete', venue_path(@venue), {method: :delete} %>
